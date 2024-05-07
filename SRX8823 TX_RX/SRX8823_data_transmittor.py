@@ -20,5 +20,5 @@ def send_data(data):
     
 # Main loop
 while True:
-    send_data("{code:MF0009}")
+    send_data("{code:Hello world!}")
     time.sleep(0.1)
