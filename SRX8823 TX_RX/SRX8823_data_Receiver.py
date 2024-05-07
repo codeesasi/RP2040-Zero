@@ -6,6 +6,9 @@ RX_PIN = machine.Pin(13)  # Receive pin (connected to the receiver module)
 pixel_pin = 16
 pixel = neopixel.NeoPixel(machine.Pin(pixel_pin), 1)
 
+# Initialize UART
+uart = machine.UART(0, baudrate=2400, rx=RX_PIN)
+
 # Function to receive data
 def receive_data():
     if uart.any():
