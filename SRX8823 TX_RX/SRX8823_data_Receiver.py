@@ -21,7 +21,7 @@ def receive_data():
         return "No data"
 		
 while True:
-	    received_data = receive_data()
-    if received_data:
-        print("Received:", received_data.strip())  # Print the received data
-    time.sleep(0.1)  # Add a small delay to reduce CPU usage
+	received_data = receive_data()
+    	if received_data:
+        	print("Received:", received_data.strip())  # Print the received data
+    	time.sleep(0.1)  # Add a small delay to reduce CPU usage
