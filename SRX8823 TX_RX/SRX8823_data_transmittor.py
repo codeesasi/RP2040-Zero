@@ -8,7 +8,7 @@ pixel_pin = 16
 pixel = neopixel.NeoPixel(machine.Pin(pixel_pin), 1)
 
 # Initialize UART
-uart = machine.UART(0, baudrate=2400, tx=TX_PIN, rx=RX_PIN)
+uart = machine.UART(0, baudrate=2400, tx=TX_PIN)
     
 def send_data(data):
     try:
