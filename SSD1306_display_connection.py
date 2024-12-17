@@ -9,7 +9,7 @@ pixel = neopixel.NeoPixel(Pin(pixel_pin), 1)
 WIDTH = 128
 HEIGHT = 64
 
-i2c = I2C(0, scl = Pin(1), sda = Pin(0), freq=400000)
+i2c = I2C(0, scl = Pin(14), sda = Pin(15), freq=400000)
 
 display = SSD1306_I2C(128, 64, i2c)
 pixel[0] = (0,0,0)
